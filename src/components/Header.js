@@ -12,6 +12,7 @@ import { SUPPORTED_LANGUAGES } from "../utils/constants.js";
 import { changeLanguage } from "../utils/configSlice";
 
 const Header = () => {
+  
   const dispatch = useDispatch();
 
   const navigate = useNavigate();
