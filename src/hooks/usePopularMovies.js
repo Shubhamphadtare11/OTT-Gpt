@@ -11,10 +11,10 @@ import { addPopularMovies } from "../utils/moviesSlice";
     const popularMovies = useSelector(store=> store.movies.popularMovies);
 
     const getPopularMovies = async() => {
-       const data = await fetch('https://api.themoviedb.org/3/movie/popular?page=1', API_OPTIONS);
-       const json = await data.json();
+       const data1 = await fetch('https://api.themoviedb.org/3/movie/top_rated?page=1', API_OPTIONS);
+       const json1 = await data1.json();
        //console.log(json.results);
-       dispatch(addPopularMovies(json.results));
+       dispatch(addPopularMovies(json1?.results));
     };
    
     useEffect(() =>{
