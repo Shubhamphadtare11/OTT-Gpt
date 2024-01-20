@@ -6,7 +6,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { useEffect } from "react";
-import { LOGO } from "../utils/constants";
+import OTT_GPT from "../utils/logo/OTT_GPT.png";
 import { toggleGptSearchView } from "../utils/gptSlice";
 import { SUPPORTED_LANGUAGES } from "../utils/constants.js";
 import { changeLanguage } from "../utils/configSlice";
@@ -64,9 +64,9 @@ const Header = () => {
 
   return (
     <div className="absolute w-[98vw] px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
-      <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="logo" />
+      <img className="w-40 mx-auto md:mx-0" src={OTT_GPT} alt="logo" />
       {user && (
-        <div className="flex flex-col sm:flex-row p-2 justify-between">
+        <div className="flex flex-col sm:flex-row p-2 items-center justify-between">
           {showGptSearch && (
             <select
               className="p-2 m-2 text-white bg-gray-900"
@@ -87,7 +87,7 @@ const Header = () => {
           </button>
           <img className="w-12 h-12 hidden md:block" src={user?.photoURL} alt="usericon" />
           <button onClick={handleSignOut} className="font-bold text-white">
-            (Sign Out)
+            Sign Out
           </button>
         </div>
       )}
