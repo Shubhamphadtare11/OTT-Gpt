@@ -1,15 +1,15 @@
 const lang = {
     en: {
-        search: "Search",
-        gptSearchPlaceholder: "What would you like to watch today?",
+        search: "GPT Search",
+        gptSearchPlaceholder: "Ex. Search Best action movies hollywood",
     },
     hindi: {
-        search: "खोज",
-        gptSearchPlaceholder: "आज आप क्या देखना चाहेंगे?",
+        search: "GPT खोज",
+        gptSearchPlaceholder: "खोजें बॉलीवुड इंडस्ट्री की सर्वश्रेष्ठ एक्शन फिल्में",
     },
     spanish: {
-        search: "buscar",
-        gptSearchPlaceholder: "¿Qué te gustaría ver hoy?",
+        search: "GPT buscar",
+        gptSearchPlaceholder: "Buscar Las mejores películas de acción hollywood",
     },
 };
 
